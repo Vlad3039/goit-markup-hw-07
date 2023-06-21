@@ -223,7 +223,12 @@
   .footer-text {
     justify-content: start;
   }
-
+  .social-media{
+    justify-content: start;
+  }
+.footer-soc-text{
+  justify-content: start;
+}
   .sub-form {
     display: flex;
     gap: 24px;
@@ -232,5 +237,6 @@
   .sub-input {
     width: 264px;
   }
+
 } 
 
