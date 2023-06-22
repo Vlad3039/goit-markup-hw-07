@@ -70,8 +70,8 @@
         font-family: inherit;
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
-        line-height: var(--tipical-line-height);
+        font-size: 12px;
+        line-height: 1.17;
         letter-spacing: 0.02em;
         color: inherit;
     }
@@ -237,6 +237,22 @@
   .sub-input {
     width: 264px;
   }
+/**-----------------OUR GALLERY-----------------*/
+.section-portfoloi {
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+.btn-list{
+  justify-content: center;
+}
 
+.gallery-list {
+column-gap: 24px;
+  justify-content: start;
+}
+
+.gallery-item {
+  width: calc((100% - 24px) / 2);
+}
 } 
 

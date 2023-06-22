@@ -16,7 +16,8 @@
     
     .address-link{
         display: block;
-     
+        font-size: 16px;
+        line-height: 1.5;
     }
  
     /**------------------HERO------------------*/
@@ -145,5 +146,19 @@
     width: 1128px;
 
     background: var(--title-color);
+  }
+  /**-----------------OUR GALLERY-----------------*/
+  .section-portfoloi {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+.btn-list{
+    margin-bottom: 72px;
+
+}
+
+.gallery-item {
+    width: calc((100% - 48px) / 3);
   }
 }

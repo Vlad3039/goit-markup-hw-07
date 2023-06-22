@@ -35,7 +35,7 @@
           >
           <ul class="nav-list list">
             <li class="nav-item">
-              <a class="header-link link" href="./index.html">Studio</a>
+              <a class="header-link link " href="./index.html">Studio</a>
             </li>
             <li class="nav-item">
               <a class="header-link current link" href="./portfolio.html">Portfolio</a>
@@ -59,6 +59,93 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="mobile-menu-btn js-open-menu">
+          <svg class="mobile-menu-btn-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu js-menu-container">
+        <button type="button" class="mobil-close-btn  js-close-menu">
+          <svg class="mobil-close-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-icon-close-modal"></use>
+          </svg>
+        </button>
+        <div>
+          <ul class="mob-list list">
+            <li class="mob-item">
+              <a class="mob-link current link" href="./index.html">Studio</a>
+            </li>
+            <li class="mob-item">
+              <a class="mob-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mob-item">
+              <a class="mob-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+<div>
+          <ul class="mob-address-list list">
+            <li class="mob-address-item">
+              <a class="tel-mob-address-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="email-mob-address-item">
+              <a class="mob-address-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+</ul>
+          <ul class="mob-soc-list list">
+            <li class="mob-soc-item">
+              <a
+                href=""
+                class="mob-soc-link link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="mob-soc-item">
+              <a
+                href=""
+                class="mob-soc-link link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a
+                href=""
+                class="mob-soc-link link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="mob-soc-item">
+              <a
+                href=""
+                class="mob-soc-link link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </header>
     <main>
@@ -91,12 +178,37 @@
               <a class="gallery-link link" href=""
                 >
                 <div class="gallery-img-wrapper">
-                <img
-                  src="./images/gallery/banking-app-interface-concept.jpg"
-                  alt="App interface"
-                  width="360"
-                  height="300"
-                />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/banking-app-interface-concept.jpg    1x,
+                        ./images/gallery/banking-app-interface-concept-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/banking-app-interface-concept-tab-1x.jpg 1x,
+                        ./images/gallery/banking-app-interface-concept-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/banking-app-interface-concept-mob-1x.jpg 1x,
+                        ./images/gallery/banking-app-interface-concept-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 768px)"
+                    />
+
+                    <img
+                    src="./images/gallery/banking-app-interface-concept.jpg"
+                    alt="App interface"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
+            
                 <p class="paragraf-gallery">14 Stylish and User-Friendly App Design Concepts ·
                   Task Manager App · Calorie Tracker App ·
                     Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -111,12 +223,36 @@
               <a class="gallery-link link" href=""
                 >
                 <div class="gallery-img-wrapper">
+                  <picture>
+                    <source
+                    srcset="
+                    ./images/gallery/cashless-payment.jpg    1x,
+                    ./images/gallery/cashless-payment-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/cashless-payment-tab-1x.jpg 1x,
+                    ./images/gallery/cashless-payment-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/cashless-payment-mob-1x.jpg 1x,
+                    ./images/gallery/cashless-payment-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                />
                 <img
                   src="./images/gallery/cashless-payment.jpg"
                   alt="Phone scans code for payment"
                   width="360"
                   height="300"
                 />
+                  </picture>
+              
                 <p class="paragraf-gallery">14 Stylish and User-Friendly App Design Concepts ·
                   Task Manager App · Calorie Tracker App ·
                     Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -131,12 +267,35 @@
               <a class="gallery-link link" href=""
                 >
                 <div class="gallery-img-wrapper">
-                <img
-                  src="./images/gallery/meditation-app.jpg"
-                  alt="Demonstration of the application on a laptop and phone"
-                  width="360"
-                  height="300"
-                />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/meditation-app.jpg    1x,
+                        ./images/gallery/meditation-app-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/meditation-app-tab-1x.jpg 1x,
+                        ./images/gallery/meditation-app-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/meditation-app-mob-1x.jpg 1x,
+                        ./images/gallery/meditation-app-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 768px)"
+                    />
+                    <img
+                      src="./images/gallery/meditation-app.jpg"
+                      alt="Demonstration of the application on a laptop and phone"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
                 <p class="paragraf-gallery">14 Stylish and User-Friendly App Design Concepts ·
                   Task Manager App · Calorie Tracker App ·
                     Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -151,12 +310,35 @@
               <a class="gallery-link link" href=""
                 >
                 <div class="gallery-img-wrapper">
-                <img
-                  src="./images/gallery/taxi-service.jpg"
-                  alt="Taxi driver uses app on phone"
-                  width="360"
-                  height="300"
-                />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/taxi-service.jpg    1x,
+                        ./images/gallery/taxi-service-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/taxi-service-tab-1x.jpg 1x,
+                        ./images/gallery/taxi-service-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/taxi-service-mob-1x.jpg 1x,
+                        ./images/gallery/taxi-service-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 768px)"
+                    />
+                    <img
+                      src="./images/gallery/taxi-service.jpg"
+                      alt="Taxi driver uses app on phone"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
                 <p class="paragraf-gallery">14 Stylish and User-Friendly App Design Concepts ·
                   Task Manager App · Calorie Tracker App ·
                     Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -172,11 +354,35 @@
                 >
                 <div class="gallery-img-wrapper">
                 <img
-                  src="./images/gallery/screen-illustrations.jpg"
-                  alt="Screen illustrations"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/gallery/screen-illustrations.jpg    1x,
+                      ./images/gallery/screen-illustrations-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery/screen-illustrations-tab-1x.jpg 1x,
+                      ./images/gallery/screen-illustrations-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery/screen-illustrations-mob-1x.jpg 1x,
+                      ./images/gallery/screen-illustrations-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="./images/gallery/screen-illustrations.jpg"
+                    alt="Screen illustrations"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="paragraf-gallery">14 Stylish and User-Friendly App Design Concepts ·
                   Task Manager App · Calorie Tracker App ·
                     Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -191,12 +397,35 @@
               <a class="gallery-link link" href=""
                 >
                 <div class="gallery-img-wrapper">
-                <img
-                  src="./images/gallery/online-courses.jpg"
-                  alt="Joyful girl watching online courses on her phone"
-                  width="360"
-                  height="300"
-                />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/online-courses.jpg    1x,
+                        ./images/gallery/online-courses-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/online-courses-tab-1x.jpg 1x,
+                        ./images/gallery/online-courses-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/online-courses-mob-1x.jpg 1x,
+                        ./images/gallery/online-courses-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 768px)"
+                    />
+                    <img
+                      src="./images/gallery/online-courses.jpg"
+                      alt="Joyful girl watching online courses on her phone"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
                 <p class="paragraf-gallery">14 Stylish and User-Friendly App Design Concepts ·
                   Task Manager App · Calorie Tracker App ·
                     Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -211,12 +440,35 @@
               <a class="gallery-link link" href=""
                 >
                 <div class="gallery-img-wrapper">
-                <img
-                  src="./images/gallery/instagram-stories-concept.jpg"
-                  alt="Concept display of instagram stories"
-                  width="360"
-                  height="300"
-                />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/instagram-stories-concept.jpg    1x,
+                        ./images/gallery/instagram-stories-concept-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/instagram-stories-concept-tab-1x.jpg 1x,
+                        ./images/gallery/instagram-stories-concept-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/instagram-stories-concept-mob-1x.jpg 1x,
+                        ./images/gallery/instagram-stories-concept-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 768px)"
+                    />
+                    <img
+                      src="./images/gallery/instagram-stories-concept.jpg"
+                      alt="Concept display of instagram stories"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
                 <p class="paragraf-gallery">14 Stylish and User-Friendly App Design Concepts ·
                   Task Manager App · Calorie Tracker App ·
                     Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -231,12 +483,35 @@
               <a class="gallery-link link" href=""
                 >
                 <div class="gallery-img-wrapper">
-                <img
-                  src="./images/gallery/organic-food.jpg"
-                  alt="Girl carrying fresh fruit"
-                  width="360"
-                  height="300"
-                />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/organic-food.jpg    1x,
+                        ./images/gallery/organic-food-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/organic-food-tab-1x.jpg 1x,
+                        ./images/gallery/organic-food-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/organic-food-mob-1x.jpg 1x,
+                        ./images/gallery/organic-food-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 768px)"
+                    />
+                    <img
+                      src="./images/gallery/organic-food.jpg"
+                      alt="Girl carrying fresh fruit"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
                 <p class="paragraf-gallery">14 Stylish and User-Friendly App Design Concepts ·
                   Task Manager App · Calorie Tracker App ·
                     Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -251,12 +526,36 @@
               <a class="gallery-link link" href=""
                 >
                 <div class="gallery-img-wrapper">
-                <img
-                  src="./images/gallery/fresh-coffee.jpg"
-                  alt="Barista creates a coffee masterpiece"
-                  width="360"
-                  height="300"
-                />
+                  <picture>
+                    <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/fresh-coffee.jpg    1x,
+                        ./images/gallery/fresh-coffee-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/fresh-coffee-tab-1x.jpg 1x,
+                        ./images/gallery/fresh-coffee-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/fresh-coffee-mob-1x.jpg 1x,
+                        ./images/gallery/fresh-coffee-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 768px)"
+                    />
+                    <img
+                      src="./images/gallery/fresh-coffee.jpg"
+                      alt="Barista creates a coffee masterpiece"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
                 <p class="paragraf-gallery">14 Stylish and User-Friendly App Design Concepts ·
                   Task Manager App · Calorie Tracker App ·
                     Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -326,5 +625,7 @@
       </div>
     </div>
     </footer>
+
+    <script src="./js/mobil.js"></script>
   </body>
 </html>
