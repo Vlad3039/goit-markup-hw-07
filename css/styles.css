@@ -1034,6 +1034,11 @@ line-height: 1.11;
   transition: border-color var(--transition);
 }
 
+.modal-comment:focus {
+  border-color: var(--first-main-color);
+  color: var(--title-color);
+}
+
 .modal-input:focus {
   border-color: var(--first-main-color);
 }
@@ -1171,6 +1176,13 @@ line-height: 1.11;
 
   .modal {
     width: 95%;
+  }
+  
+  .btn-portfolio{
+font-size: 12px;
+  }
+  .gallery-title{
+    font-size: 16px;
   }
 }
 
